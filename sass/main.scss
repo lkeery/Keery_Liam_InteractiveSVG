@@ -1,0 +1,11 @@
+@import '_vars';
+
+body {
+    color: $main-color;
+    background-color: $body-bg;
+}
+
+#PLAY_BUTTON_1 {
+    cursor: pointer;
+}
+
