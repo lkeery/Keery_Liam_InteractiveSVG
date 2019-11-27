@@ -1,8 +1,8 @@
 const config = {
     host: "localhost",
-    port: 8889, // 8889 for mac
+    port: 3306, // 8889 for mac
     uname: "root",
-    pword: "root", // leave blank for windows
+    pword: "hopalong", // leave blank for windows
     database: "svgdata"
 }
 
