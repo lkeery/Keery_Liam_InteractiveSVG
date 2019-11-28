@@ -223,15 +223,17 @@
     {{!-- Song 1 (In order by Streams, Artist, Song) --}}
 
   {{#each spotifyData}}
-    <text class="{{streamsClass}} streams" transform="{{streamsTransform}}">{{Streams}}</text> {{!-- translate(346.09 229.67) --}}
+  <g class="text_{{ID}}">
+    <text class="{{streamsClass}} streams hide"  transform="{{streamsTransform}}">{{Streams}}</text> {{!-- translate(346.09 229.67) --}}
 
-    <text class="{{artistClass}} artist" transform="{{artistTransform}}">{{Artist}}</text> {{!-- translate(400.11 262.67) --}}
+    <text class="{{artistClass}} artist hide" transform="{{artistTransform}}">{{Artist}}</text> {{!-- translate(400.11 262.67) --}}
 
-    <text class="{{songClass}} song-title" transform="{{songTransform}}">{{Song}}</text> {{!-- translate(379.82 293) --}}
+    <text class="{{songClass}} song-title hide" transform="{{songTransform}}">{{Song}}</text> {{!-- translate(379.82 293) --}}
+  </g>
   {{/each}}
 
 
-    {{!-- Song 2 --}}
+    {{!-- Song 2
 
     <text class="cls-7 streams" transform="translate(57.06 376.67)"></text>
     
@@ -302,7 +304,7 @@
 
     <text class="cls-24" transform="translate(71.33 1559.67)"></text>
     
-    <text class="cls-14" transform="translate(115.5 1614)"></text>
+    <text class="cls-14" transform="translate(115.5 1614)"></text> --}}
 
     {{!-- Artist Illustrations --}}
     <path fill="#b37652"
@@ -361,8 +363,8 @@
   </g>
 </svg>
 
-{{!-- <script>
+<script>
   (() => {
     new Vivus('interactive-svg', { start: 'autostart', duration: 300, type: 'sync' });
   })();
-</script> --}}
+</script>
