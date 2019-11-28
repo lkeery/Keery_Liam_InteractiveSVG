@@ -24,7 +24,7 @@
             .then(data => {
                 console.log('Database result is: ', data);
 
-                showData(data[0]);
+                showData(data);
             })
             .catch((err) => {
                 console.log(err)

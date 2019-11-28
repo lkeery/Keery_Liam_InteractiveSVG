@@ -110,28 +110,30 @@
     
     {{!-- Song 1 (In order by Streams, Artist, Song) --}}
 
-    <text class="cls-7 streams" transform="translate(346.09 229.67)"></text> 
+  {{#each spotifyData}}
+    <text class="{{streamsClass}} streams" transform="{{streamsTransform}}">{{Streams}}</text> {{!-- translate(346.09 229.67) --}}
 
-    <text class="cls-8 artist" transform="translate(400.11 262.67)"></text>
+    <text class="{{artistClass}} artist" transform="{{artistTransform}}">{{Artist}}</text> {{!-- translate(400.11 262.67) --}}
 
-    <text class="cls-14 song-title" transform="translate(379.82 293)"></text>
+    <text class="{{songClass}} song-title" transform="{{songTransform}}">{{Song}}</text> {{!-- translate(379.82 293) --}}
+  {{/each}}
 
+    {{!-- Song 2
 
-    {{!-- Song 2 --}}
-
-    <text class="cls-7" transform="translate(57.06 376.67)"></text>
+    <text class="cls-7 streams" transform="translate(57.06 376.67)"></text>
     
-    <text class="cls-8" transform="translate(61.29 412.67)"></text>
+    <text class="cls-8 artist" transform="translate(61.29 412.67)"></text>
     
-    <text class="cls-14" transform="translate(102.37 442)"></text>
+    <text class="cls-14 song-title" transform="translate(102.37 442)"></text>
+
 
     {{!-- Song 3 --}}
 
-    <text class="cls-7" transform="translate(349.36 524.67)"></text>
+    <text class="cls-7 streams" transform="translate(349.36 524.67)"></text>
 
-    <text class="cls-8" transform="translate(335.98 560.67)"></text>
+    <text class="cls-8 artist" transform="translate(335.98 560.67)"></text>
 
-    <text class="cls-14" transform="translate(396.4 591)"></text>
+    <text class="cls-14 song-title" transform="translate(396.4 591)"></text>
 
     {{!-- Song 4 --}}
     
@@ -187,7 +189,7 @@
 
     <text class="cls-24" transform="translate(71.33 1559.67)"></text>
     
-    <text class="cls-14" transform="translate(115.5 1614)"></text>
+    <text class="cls-14" transform="translate(115.5 1614)"></text> --}}
 
     {{!-- Artist Illustrations --}}
     <path fill="#b37652" d="M292.47 1862.89c-3.06-8-9.82-7.88-9.82-7.88l-10.57-1c-7.14-1.4-8.93-5.22-8.93-5.22a7.36 7.36 0 01-.63-5.74 5.75 5.75 0 011.53-3.19c1.4-1.53-2.94-2.55-2.94-2.55-2.8-.5-3.18-3.56-3.18-3.56-.38-3.19 2.55-5.1 2.55-5.1a5.72 5.72 0 01-3.32-6.25 34.5 34.5 0 012.17-5.73 8.17 8.17 0 01-6.75-4.84c-.39-3.7 4.46-9.18 4.46-9.18l5.35-6.76a8.5 8.5 0 002.17-5.73 2.48 2.48 0 00-1.66-2.68c-1.15-.63 1.15-6.5 1.15-6.5l2.54-6.5a20.38 20.38 0 012.3-6.5c1-1.78 2.42-4.71 2.42-4.71-.25-5.87 5.48-9.82 5.48-9.82 3.95-3.18 14.66-6.11 14.66-6.11a99.1 99.1 0 0128.67-2C341 1748 348 1758.66 348 1758.66a45.83 45.83 0 019.31 20.52c1.4 6.24 0 13.51 0 13.51a125.12 125.12 0 01-5.1 16.06l-2.17 6.5c-3.06 5.09-3.31 16.69-3.31 16.69a101.51 101.51 0 00.64 13.89c1.65 11.6 3.57 17.06 3.57 17.06z"/>
