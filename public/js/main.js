@@ -1,12 +1,11 @@
 (() => {
     console.log("Connected!");
 
-    const buttons = document.querySelectorAll('.playButtons');
+    const buttons = document.querySelectorAll('.playButtons'),
+        mp3 = document.querySelector('audio');
 
     function showData(spotifyData, el) {
-
-       
-
+   
         let targetText = document.querySelector(`.text_${el}`);
 
         targetText.classList.remove('hide');
@@ -18,6 +17,14 @@
         streams.textContent = `${spotifyData.Streams}`;
         artist.textContent = `${spotifyData.Artist}`;
         song.textContent = `${spotifyData.Song}`;
+
+        targetText.classList.add(spotifyData.animationClass);
+
+        let audiosrc = `music/${spotifyData.Song.split(" ").join("").toLowerCase()}.mp3`;
+        mp3.src = audiosrc;
+
+        mp3.load();
+        mp3.play();
     }
 
     function fetchData(event) {
