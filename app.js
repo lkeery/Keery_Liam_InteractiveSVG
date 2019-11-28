@@ -3,7 +3,7 @@ const path = require('path');
 const hbs = require('hbs');
 
 // set the port
-const port = process.env.PORT || 5050;
+const port = process.env.PORT || 3000;
 
 const app = express();
 
