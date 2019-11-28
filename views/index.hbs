@@ -222,28 +222,31 @@
 
     {{!-- Song 1 (In order by Streams, Artist, Song) --}}
 
-    <text class="cls-7 streams" transform="translate(346.09 229.67)"></text>
+  {{#each spotifyData}}
+    <text class="{{streamsClass}} streams" transform="{{streamsTransform}}">{{Streams}}</text> {{!-- translate(346.09 229.67) --}}
 
-    <text class="cls-8 artist" transform="translate(400.11 262.67)"></text>
+    <text class="{{artistClass}} artist" transform="{{artistTransform}}">{{Artist}}</text> {{!-- translate(400.11 262.67) --}}
 
-    <text class="cls-14 song-title" transform="translate(379.82 293)"></text>
+    <text class="{{songClass}} song-title" transform="{{songTransform}}">{{Song}}</text> {{!-- translate(379.82 293) --}}
+  {{/each}}
 
 
     {{!-- Song 2 --}}
 
-    <text class="cls-7" transform="translate(57.06 376.67)"></text>
-
-    <text class="cls-8" transform="translate(61.29 412.67)"></text>
-
-    <text class="cls-14" transform="translate(102.37 442)"></text>
+    <text class="cls-7 streams" transform="translate(57.06 376.67)"></text>
+    
+    <text class="cls-8 artist" transform="translate(61.29 412.67)"></text>
+    
+    <text class="cls-14 song-title" transform="translate(102.37 442)"></text>
+    
 
     {{!-- Song 3 --}}
 
-    <text class="cls-7" transform="translate(349.36 524.67)"></text>
+    <text class="cls-7 streams" transform="translate(349.36 524.67)"></text>
 
-    <text class="cls-8" transform="translate(335.98 560.67)"></text>
+    <text class="cls-8 artist" transform="translate(335.98 560.67)"></text>
 
-    <text class="cls-14" transform="translate(396.4 591)"></text>
+    <text class="cls-14 song-title" transform="translate(396.4 591)"></text>
 
     {{!-- Song 4 --}}
 
@@ -298,7 +301,7 @@
     <text class="cls-7" transform="translate(57.01 1528.67)"></text>
 
     <text class="cls-24" transform="translate(71.33 1559.67)"></text>
-
+    
     <text class="cls-14" transform="translate(115.5 1614)"></text>
 
     {{!-- Artist Illustrations --}}
