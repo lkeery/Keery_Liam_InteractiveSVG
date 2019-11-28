@@ -3,7 +3,7 @@ const path = require('path');
 const hbs = require('hbs');
 
 // set the port
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 5050;
 
 const app = express();
 
@@ -23,10 +23,10 @@ app.use((req, res, next) => {
 })
 
 app.use((err, req, res, next) => {
-  res.render('error', {data: err, layout: 'error'});
+  res.render('error', { data: err, layout: 'error' });
 })
 
 app.listen(port, () => {
-    console.log(`app is running on ${port}`);
+  console.log(`app is running on ${port}`);
 })
 

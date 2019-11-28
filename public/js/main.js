@@ -1,7 +1,10 @@
 (() => {
     console.log("Connected!");
 
-    const buttons = document.querySelectorAll('.playButtons');
+    //let myTest = new Vivus('interactive-svg', { duration: 200 });
+
+    const buttons = document.querySelectorAll('.playButtons'),
+        mp3 = document.querySelector('audio');
 
     function showData(spotifyData) {
         const streams = document.querySelector('.streams');
@@ -11,12 +14,18 @@
         streams.textContent = `${spotifyData.Streams}`;
         artist.textContent = `${spotifyData.Artist}`;
         song.textContent = `${spotifyData.Song}`;
+
+        let audiosrc = `music/${spotifyData.Song.split(" ").join("").toLowerCase()}.mp3`;
+        mp3.src = audiosrc;
+
+        mp3.load();
+        mp3.play();
     }
 
     function fetchData(event) {
-        
+
         event.preventDefault();
-        
+
         let url = `/song/${this.getAttribute('href')}`;
 
         fetch(url) // get data
