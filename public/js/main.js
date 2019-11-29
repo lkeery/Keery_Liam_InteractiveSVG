@@ -4,6 +4,10 @@
     const buttons = document.querySelectorAll('.playButtons'),
         mp3 = document.querySelector('audio');
 
+    const edImg = document.querySelector('.edImg');
+    const drakeImg = document.querySelector('.drakeImg');
+    const justinImg = document.querySelector('.justinImg');
+
     function showData(spotifyData, el) {
    
         let targetText = document.querySelector(`.text_${el}`);
@@ -21,6 +25,9 @@
         targetText.classList.add(spotifyData.animationClass);
 
         let audiosrc = `music/${spotifyData.Song.split(" ").join("").toLowerCase()}.mp3`;
+
+        audiosrc = audiosrc.replace("’", "");
+
         mp3.src = audiosrc;
 
         mp3.load();
@@ -46,6 +53,29 @@
                 console.log(err)
             });
     }
+
+    const waypoint = new Waypoint({
+        element: document.querySelector('.bottom'),
+        handler: function(direction) {
+            
+            console.log("Triggered");
+
+            let count = 2;
+
+            let ed = document.querySelector('.ed-count');
+            let drake = document.querySelector('.drake-count');
+            let justin = document.querySelector('.justin-count');
+    
+            ed.classList.add('fadeIn');
+            drake.classList.add('fadeIn');
+            justin.classList.add('fadeIn');
+    
+            ed.textContent = `${count}`;
+            drake.textContent = `${count}`;
+            justin.textContent = `${count}`;
+        },
+        offset: '100%'
+      })
 
     buttons.forEach(button => button.addEventListener('click', fetchData));
 })();
