@@ -8,6 +8,7 @@
     const drakeImg = document.querySelector('.drakeImg');
     const justinImg = document.querySelector('.justinImg');
 
+
     function showData(spotifyData, el) {
    
         let targetText = document.querySelector(`.text_${el}`);
@@ -57,8 +58,6 @@
     const waypoint = new Waypoint({
         element: document.querySelector('.bottom'),
         handler: function(direction) {
-            
-            console.log("Triggered");
 
             let count = 2;
 
