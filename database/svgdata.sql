@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Dec 02, 2019 at 04:57 PM
+-- Generation Time: Dec 02, 2019 at 08:23 PM
 -- Server version: 5.7.26
 -- PHP Version: 7.3.8
 
@@ -52,9 +52,9 @@ INSERT INTO `tbl_spotify` (`ID`, `Streams`, `Artist`, `Song`, `streamsClass`, `a
 (5, '1,641,000,000', 'ED SHEERAN', 'THINKING OUT LOUD', 'cls-7', 'cls-8', 'cls-14', 'translate(347.76 808.67)', 'translate(400.11 844.67)', 'translate(353.05 875)', 'bounceInRight'),
 (6, '1,399,000,000', 'DRAKE', 'GOD’S PLAN', 'cls-7', 'cls-8', 'cls-14', 'translate(56.94 952.67)', 'translate(134.64 988.67)', 'translate(101.08 1019)', 'bounceInLeft'),
 (7, '1,326,000,000', 'CAMILA CABELLO FT. YOUNG THUG', 'HAVANA', 'cls-7', 'cls-8', 'cls-14', 'translate(346.11 1096.67)', 'translate(315.36 1132.67)', 'translate(405.86 1163)', 'bounceInRight'),
-(8, '1,290,000,000', 'LUIS FONSI & DADDY YANKEE FT. JUSTIN BIEBER', 'DESPACITO (REMIX)', 'cls-7', 'cls-24', 'cls-14', 'translate(56.69 1240.67)', 'translate(62.31 1271.67)', 'translate(68.77 1326)', 'bounceInLeft'),
+(8, '1,290,000,000', 'LUIS FONSI & DADDY YANKEE', 'DESPACITO (REMIX)', 'cls-7', 'cls-24', 'cls-14', 'translate(56.69 1240.67)', 'translate(62.31 1271.67)', 'translate(68.77 1305)', 'bounceInLeft'),
 (9, '1,285,000,000', 'JUSTIN BIEBER', 'LOVE YOURSELF', 'cls-7', 'cls-8', 'cls-14', 'translate(346.01 1384.67)', 'translate(391.88 1420.67)', 'translate(374.64 1451)', 'bounceInRight'),
-(10, '1,285,000,000', 'MAJOR LAZER & DJ SNAKEFT. MØ', 'LEAN ON', 'cls-7', 'cls-24', 'cls-14', 'translate(57.01 1528.67)', 'translate(71.33 1559.67)', 'translate(115.5 1614)', 'bounceInLeft');
+(10, '1,285,000,000', 'MAJOR LAZER & DJ SNAKE FT. MØ', 'LEAN ON', 'cls-7', 'cls-24', 'cls-14', 'translate(57.01 1528.67)', 'translate(46.33 1559.67)', 'translate(115.5 1590)', 'bounceInLeft');
 
 --
 -- Indexes for dumped tables

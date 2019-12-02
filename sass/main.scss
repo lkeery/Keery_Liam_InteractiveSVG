@@ -3,9 +3,26 @@
 body {
     color: $main-color;
     background-color: $body-bg;
+    margin-bottom: 30px;
 }
 
-#PLAY_BUTTON_1 {
+.playButtons {
     cursor: pointer;
+}
+
+.button {
+    width: 200px;
+    background: #1DB954;
+    border: none;
+}
+
+.button:hover {
+    background: rgb(17, 112, 51);
+}
+
+.button_con {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
 }
 

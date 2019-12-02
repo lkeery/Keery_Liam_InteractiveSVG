@@ -4,26 +4,26 @@
     const buttons = document.querySelectorAll('.playButtons'),
         mp3 = document.querySelector('audio');
 
-    const edImg = document.querySelector('.edImg');
-    const drakeImg = document.querySelector('.drakeImg');
-    const justinImg = document.querySelector('.justinImg');
-
+    const stopButton = document.querySelector('.stop');
+    const topButton = document.querySelector('.top');
 
     function showData(spotifyData, el) {
    
+        let buttonPath = document.querySelector('.buttonPath');
         let targetText = document.querySelector(`.text_${el}`);
 
         targetText.classList.remove('hide');
+        buttonPath.classList.add('flash');
 
-        const streams = document.querySelector('.streams');
-        const artist = document.querySelector('.artist');
-        const song = document.querySelector('.song-title');
+        const streams = document.querySelectorAll('.streams')[el - 1];
+        const artist = document.querySelectorAll('.artist')[el -1];
+        const song = document.querySelectorAll('.song-title')[el - 1];
+
+        targetText.classList.add(spotifyData.animationClass);
 
         streams.textContent = `${spotifyData.Streams}`;
         artist.textContent = `${spotifyData.Artist}`;
-        song.textContent = `${spotifyData.Song}`;
-
-        targetText.classList.add(spotifyData.animationClass);
+        song.textContent = `"${spotifyData.Song}"`;
 
         let audiosrc = `music/${spotifyData.Song.split(" ").join("").toLowerCase()}.mp3`;
 
@@ -33,6 +33,15 @@
 
         mp3.load();
         mp3.play();
+    }
+
+    function stopMusic() {
+        mp3.pause();
+    }
+
+    function backToTop() {
+        document.body.scrollTop = 0; 
+        document.documentElement.scrollTop = 0; 
     }
 
     function fetchData(event) {
@@ -77,4 +86,6 @@
       })
 
     buttons.forEach(button => button.addEventListener('click', fetchData));
+    stopButton.addEventListener('click', stopMusic);
+    topButton.addEventListener('click', backToTop);
 })();

@@ -4,6 +4,8 @@
   Your browser does not support the audio element.
 </audio>
 
+<h1 class="hide">Spotify Infographic</h1>
+
 {{!-- Begin SVG --}}
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 612 2042" id="interactive-svg">
   <defs>
@@ -190,34 +192,34 @@
 
     {{!-- Add anchor tags for each play button targeting the dynamic route --}}
     <a href="1" class="playButtons">
-      <path id="PLAY_BUTTON_1" d="M127.14 217l-22.5-12.99v25.98l22.5-12.99z" class="cls-5" />
+      <path id="PLAY_BUTTON_1" d="M127.14 217l-22.5-12.99v25.98l22.5-12.99z" class="cls-5 animated buttonPath" />
     </a>
     <a href="2" class="playButtons">
-      <path id="PLAY_BUTTON_2" d="M511.14 360l-22.5-12.99v25.98l22.5-12.99z" class="cls-5" />
+      <path id="PLAY_BUTTON_2" d="M511.14 360l-22.5-12.99v25.98l22.5-12.99z" class="cls-5 animated buttonPath" />
     </a>
     <a href="3" class="playButtons">
-      <path id="PLAY_BUTTON_3" d="M127.14 504l-22.5-12.99v25.98l22.5-12.99z" class="cls-5" />
+      <path id="PLAY_BUTTON_3" d="M127.14 504l-22.5-12.99v25.98l22.5-12.99z" class="cls-5 animated buttonPath" />
     </a>
     <a href="4" class="playButtons">
-      <path id="PLAY_BUTTON_4" d="M511.14 648l-22.5-12.99v25.98l22.5-12.99z" class="cls-5" />
+      <path id="PLAY_BUTTON_4" d="M511.14 648l-22.5-12.99v25.98l22.5-12.99z" class="cls-5 animated buttonPath" />
     </a>
     <a href="5" class="playButtons">
-      <path id="PLAY_BUTTON_5" d="M131.14 792l-22.5-12.99v25.98l22.5-12.99z" class="cls-5" />
+      <path id="PLAY_BUTTON_5" d="M131.14 792l-22.5-12.99v25.98l22.5-12.99z" class="cls-5 animated buttonPath" />
     </a>
     <a href="6" class="playButtons">
-      <path id="PLAY_BUTTON_6" d="M511.14 936l-22.5-12.99v25.98l22.5-12.99z" class="cls-5" />
+      <path id="PLAY_BUTTON_6" d="M511.14 936l-22.5-12.99v25.98l22.5-12.99z" class="cls-5 animated buttonPath" />
     </a>
     <a href="7" class="playButtons">
-      <path id="PLAY_BUTTON_7" d="M131.14 1080l-22.5-12.99v25.98l22.5-12.99z" class="cls-5" />
+      <path id="PLAY_BUTTON_7" d="M131.14 1080l-22.5-12.99v25.98l22.5-12.99z" class="cls-5 animated buttonPath" />
     </a>
     <a href="8" class="playButtons">
-      <path id="PLAY_BUTTON_8" d="M511.14 1224l-22.5-12.99v25.98l22.5-12.99z" class="cls-5" />
+      <path id="PLAY_BUTTON_8" d="M511.14 1224l-22.5-12.99v25.98l22.5-12.99z" class="cls-5 animated buttonPath" />
     </a>
     <a href="9" class="playButtons">
-      <path id="PLAY_BUTTON_9" d="M131.14 1368l-22.5-12.99v25.98l22.5-12.99z" class="cls-5" />
+      <path id="PLAY_BUTTON_9" d="M131.14 1368l-22.5-12.99v25.98l22.5-12.99z" class="cls-5 animated buttonPath" />
     </a>
     <a href="10" class="playButtons">
-      <path id="PLAY_BUTTON_10" d="M510.14 1512l-22.5-12.99v25.98l22.5-12.99z" class="cls-5" />
+      <path id="PLAY_BUTTON_10" d="M510.14 1512l-22.5-12.99v25.98l22.5-12.99z" class="cls-5 animated buttonPath" />
     </a>
 
     {{!-- Song 1 (In order by Streams, Artist, Song) --}}
@@ -231,80 +233,6 @@
     <text class="{{songClass}} song-title" transform="{{songTransform}}">"{{Song}}"</text> {{!-- translate(379.82 293) --}}
   </g>
   {{/each}}
-
-
-    {{!-- Song 2
-
-    <text class="cls-7 streams" transform="translate(57.06 376.67)"></text>
-    
-    <text class="cls-8 artist" transform="translate(61.29 412.67)"></text>
-    
-    <text class="cls-14 song-title" transform="translate(102.37 442)"></text>
-    
-
-    {{!-- Song 3 --}}
-
-    <text class="cls-7 streams" transform="translate(349.36 524.67)"></text>
-
-    <text class="cls-8 artist" transform="translate(335.98 560.67)"></text>
-
-    <text class="cls-14 song-title" transform="translate(396.4 591)"></text>
-
-    {{!-- Song 4 --}}
-
-    <text class="cls-7" transform="translate(58.76 668.67)"></text>
-
-    <text class="cls-8" transform="translate(34.57 704.67)"></text>
-
-    <text class="cls-14" transform="translate(120.62 735)"></text>
-
-    {{!-- Song 5 --}}
-
-    <text class="cls-7" transform="translate(347.76 808.67)"></text>
-
-    <text class="cls-8" transform="translate(400.11 844.67)"></text>
-
-    <text class="cls-14" transform="translate(353.05 875)"></text>
-
-    {{!-- Song 6 --}}
-
-    <text class="cls-7" transform="translate(56.94 952.67)"></text>
-
-    <text class="cls-8" transform="translate(134.64 988.67)"></text>
-
-    <text class="cls-14" transform="translate(101.08 1019)"></text>
-
-    {{!-- Song 7 --}}
-
-    <text class="cls-7" transform="translate(346.11 1096.67)"></text>
-
-    <text class="cls-8" transform="translate(315.36 1132.67)"></text>
-
-    <text class="cls-14" transform="translate(405.86 1163)"></text>
-
-    {{!-- Song 8 --}}
-
-    <text class="cls-7" transform="translate(56.69 1240.67)"></text>
-
-    <text class="cls-24" transform="translate(62.31 1271.67)"></text>
-
-    <text class="cls-14" transform="translate(68.77 1326)"></text>
-
-    {{!-- Song 9 --}}
-
-    <text class="cls-7" transform="translate(346.01 1384.67)"></text>
-
-    <text class="cls-8" transform="translate(391.88 1420.67)"></text>
-
-    <text class="cls-14" transform="translate(374.64 1451)"></text>
-
-    {{!-- Song 10 --}}
-
-    <text class="cls-7" transform="translate(57.01 1528.67)"></text>
-
-    <text class="cls-24" transform="translate(71.33 1559.67)"></text>
-    
-    <text class="cls-14" transform="translate(115.5 1614)"></text> --}}
 
     {{!-- Artist Illustrations --}}
     
@@ -336,6 +264,7 @@
       d="M442.25 1822.21c5.81-5 12.81-26.75 12.81-26.75 16.44-13.85 22-25.81 22-25.81a68.36 68.36 0 0011.84 9.13c11.12 1.89 12.81-6.93 12.81-6.93 4.11 5.67 7 7.56 7 7.56 8.21-9.44-1.45-29.27-1.45-29.27-14.75-8.18-21.27-7.87-21.27-7.87-15.95-6.92-21.27-6-21.27-6a55.65 55.65 0 00-11.12-6.29 26.84 26.84 0 014.11 8.5c-5.8-.32-7.25-8.5-7.25-8.5 1.45 8.18 1 10.38 1 10.38l-11.6 3.78c-13.29 5-21.27 22-21.27 22-5.32 26.43-3.14 30.53-3.14 30.53 4.59-6.61 5.32-16.37 5.32-16.37-1 11.64-2.42 16.37-2.42 16.37 5.8-5.35 6.52-11 6.52-11-.72 10.39-2.9 15.42-2.9 15.42 8-10.38 5.32-.63 5.32-.63l4.11-8.5-3.63 21.09c4.6-8.81 6.29-21.4 6.29-21.4a54 54 0 01-2.9 22.66 116.31 116.31 0 008.21-22.66c-1.69 11.64-5.07 25.81-5.07 25.81l8-26.12c.49 9.44-2.65 19.51-2.65 19.51l8.7-16.37c.24 10.39-2.18 17-2.18 17" />
 
 
+
     <text fill="#fff" font-family="Haettenschweiler" font-size="32" transform="translate(66.93 1703)">
       ARTISTS WITH MORE THAN ONE SONG IN THE TOP 10
     </text>
@@ -352,6 +281,7 @@
       JU<tspan x="30.46" y="0" letter-spacing="-.01em">S</tspan>
       <tspan x="44.35" y="0" letter-spacing="0">TIN BIEBER</tspan>
     </text>
+
 
 
     {{!-- ED SHEERAN --}}
@@ -371,6 +301,11 @@
       class="cls-48" />
   </g>
 </svg>
+
+<div class="button_con">
+<button class="button stop">Stop Audio</button>
+<button class="button top">Back to Top</button>
+</div>
 
 <span class="bottom"></span>
 
