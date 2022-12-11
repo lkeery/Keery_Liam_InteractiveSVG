@@ -19,7 +19,7 @@
   "license": "ISC",
   "dependencies": {
     "animate.css": "^3.7.2",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "hbs": "^4.0.6",
     "mysql": "^2.17.1",
     "vivus": "^0.4.5",
